@@ -28,6 +28,7 @@ pin_d = 5;
 collar_d = 9;
 camlock_d = 12;
 spring_d = 9.5;
+btn_d = 6.5;
 
 Ri = enclosed_dia/2;
 Rc = Ri + arc_w/2;
@@ -50,7 +51,7 @@ boss_d = 24;
 lobe_x0 = -(Rc + jgy_gear[0] - jgy_shaft_from_end + jgy_motor_l + 4);
 lobe_hw = jgy_gear[1]/2 + clr + wall + 1;
 
-boss_pts = [for (a=[205,245,285,320,348]) (Ri+33)*[cos(a),sin(a)]];
+boss_pts = [for (a=[205,245,288,320,348]) (Ri+33)*[cos(a),sin(a)]];
 lobe_boss = [[-Rc-45, 15.5], [-Rc-45, -15.5]];
 screw_pts = concat(boss_pts, lobe_boss);
 
@@ -63,6 +64,16 @@ module ring(r0, r1, h, a0, a1, round_r=0)
 module rbox(x0, x1, y0, y1, r=4)
   offset(r) offset(-r) translate([x0,y0]) square([x1-x0, y1-y0]);
 
+module chamfered(h, cb=0, ct=0, n=5) { // stepped edge chamfer on 2D child
+  translate([0,0,cb]) linear_extrude(h - cb - ct) children();
+  for (i=[0:n-1]) {
+    if (cb > 0) translate([0,0,cb*i/n]) linear_extrude(cb/n + 0.02)
+      offset(-cb*(n-i)/n) children();
+    if (ct > 0) translate([0,0,h - ct*(n-i)/n - 0.02]) linear_extrude(ct/n + 0.02)
+      offset(-ct*(i+1)/n) children();
+  }
+}
+
 module plan2d() offset(2) offset(-2) union() {
   difference() {
     circle(house_or);
@@ -71,6 +82,7 @@ module plan2d() offset(2) offset(-2) union() {
   }
   rbox(lobe_x0, -Ri, -lobe_hw, lobe_hw);
   rbox(rec_x0, rec_x1, rec_y0, rec_y1);
+  rbox(-pcb[0]/2 - 6, pcb[0]/2 + 6, pcb_wall_y, -Ri - 15); // flat wall bump clears PCB corners
 }
 
 module cavity2d() offset(-wall) plan2d();
@@ -89,19 +101,40 @@ module d2f_pocket(depth)
     for (s=[-1,1]) translate([s*d2f_hole_pitch/2, 0, -6]) cylinder(d=1.9, h=6.1);
   }
 
-module wall_slot(ang, zc, w, h) // radial slot through outer wall
-  rotate([0,0,ang]) translate([house_or - wall - 1, 0, zc]) rotate([0,90,0])
-    hull() for (s=[-1,1]) translate([0, s*(w-h)/2]) cylinder(d=h, h=wall+2);
+module wall_slot(ang, zc, w, h, d=wall+2) // radial slot through outer wall
+  rotate([0,0,ang]) translate([house_or + 1 - d, 0, zc]) rotate([0,90,0])
+    hull() for (s=[-1,1]) translate([0, s*(w-h)/2]) cylinder(d=h, h=d);
 
 pcb_c = [0, -(Ri + wall + pcb[1]/2 + 1)];
+pcb_wall_y = pcb_c[1] - pcb[1]/2 - 0.3 - wall;
 pcb_holes = [for (sx=[-1,1], sy=[-1,1])
   pcb_c + [sx*(pcb[0]/2 - pcb_inset), sy*(pcb[1]/2 - pcb_inset)]];
 usb_z = floor_t + pcb_standoff + pcb[2] + 1.7;
+btn_a = 283; btn_z = usb_z + 1; // radial axis at PCB button corner
+btn_or = -pcb_wall_y/abs(sin(btn_a)); // outer face along button axis through flat bump
+
+module button_cap() {
+  cylinder(d=3, h=2);
+  translate([0,0,2]) cylinder(d=9, h=1.2);
+  translate([0,0,3.2]) cylinder(d=btn_d, h=1.8);
+  intersection() {
+    translate([0,0,1.2]) sphere(r=5);
+    translate([0,0,5]) cylinder(d=btn_d, h=1.3);
+  }
+}
+
+module btn_place()
+  rotate([0,0,btn_a]) translate([btn_or - wall - 3.2, 0, btn_z]) rotate([0,90,0]) children();
+
+module button_bore() rotate([0,0,btn_a]) translate([0,0,btn_z]) rotate([0,90,0]) {
+  translate([0,0,btn_or - wall - 1]) cylinder(d=btn_d + 0.3, h=wall + 3);
+  translate([0,0,btn_or - 1.6]) cylinder(d1=btn_d + 0.3, d2=btn_d + 5.5, h=2.6); // covers oblique face
+}
 
 module housing_inner() difference() {
   union() {
     difference() {
-      linear_extrude(seam) plan2d();
+      chamfered(seam, cb=1) plan2d();
       translate([0,0,floor_t]) linear_extrude(seam) cavity2d();
     }
     for (p=pcb_holes) translate([p[0], p[1], 0]) cylinder(d=5.5, h=floor_t+pcb_standoff);
@@ -118,7 +151,8 @@ module housing_inner() difference() {
   for (p=pcb_holes) translate([p[0], p[1], floor_t]) cylinder(d=2.1, h=pcb_standoff+6);
   for (p=screw_pts) translate([p[0], p[1], 4]) cylinder(d=2.5, h=seam);
   wall_slot(270, usb_z, 9.4, 3.8);
-  wall_slot(283, usb_z + 1, 4.2, 4.2);
+  wall_slot(270, usb_z, 13, 7.2, 2.2); // plug body recess
+  button_bore();
 }
 
 pin_y = 6;
@@ -128,7 +162,7 @@ endstop_a = [250, 70]; // closed, open azimuth about hinge
 
 module fixed_arc_solid() {
   translate([0,0,za0]) ring(Ri, Ro, arc_t, fixed_a0, 360, 2);
-  translate([0,0,za0]) linear_extrude(rec_top - za0) rbox(rec_x0, rec_x1, rec_y0, rec_y1);
+  translate([0,0,za0]) chamfered(rec_top - za0, ct=1) rbox(rec_x0, rec_x1, rec_y0, rec_y1);
 }
 
 module seat_pocket() {
@@ -143,6 +177,7 @@ module latch_bores() {
   translate([slot_x0, pin_y-collar_d/2-0.3, 24]) // collar + servo horn slot
     cube([slot_x1-slot_x0, collar_d+0.6, zpin+collar_d/2+0.3-24]);
   translate([cam_x, pin_y, zpin+2]) cylinder(d=camlock_d+0.3, h=rec_top); // cam lock barrel
+  translate([cam_x, pin_y, rec_top-1.3]) cylinder(d1=camlock_d+0.3, d2=camlock_d+3.3, h=1.4); // flush face ring
   translate([Ri+8, pin_y, za0+3]) cube([13.3, 6.3, 6.9], center=true); // latch-sense switch
   translate([Ri+8, (rec_y0+pin_y)/2, za0+3]) cube([6.3, pin_y-rec_y0, 6.9], center=true);
   translate([Ri+8, pin_y, za0+5]) cylinder(d=2, h=zs0-za0-4.5); // plunger to seat floor
@@ -158,7 +193,7 @@ gearbox_cx = -(Rc - jgy_shaft_from_end) - jgy_gear[0]/2;
 module housing_lid(arc=true) difference() {
   union() {
     difference() {
-      linear_extrude(H - seam) plan2d();
+      chamfered(H - seam, ct=1) plan2d();
       translate([0,0,-1]) linear_extrude(H - seam - wall + 1) cavity2d();
     }
     translate([0,0,-1.4]) linear_extrude(1.4) difference()
@@ -222,6 +257,7 @@ module assembly() {
   color("steelblue") arc_fixed();
   color("orange") translate([hx,0,0]) rotate([0,0,swing]) translate([-hx,0,0]) arc_swing();
   color("crimson") translate([pin_lift,0,0]) latch_pin_part();
+  color("gold") btn_place() button_cap();
 }
 
 if (part == "housing_inner") housing_inner();
@@ -229,4 +265,5 @@ else if (part == "housing_lid") housing_lid();
 else if (part == "arc_fixed") translate([0,0,-za0]) arc_fixed();
 else if (part == "arc_swing") translate([0,0,-(H+3.5)]) arc_swing();
 else if (part == "latch_pin") translate([-Rc-1.5, -pin_y, -zpin+pin_d/2]) latch_pin_part();
+else if (part == "button_cap") button_cap();
 else assembly();

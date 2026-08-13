@@ -229,6 +229,7 @@ static void debounce(uint8_t pin) {
       break;
     case PIN_BUTTON:
       if (m && !btnDown) {
+        if (!bleMasterPresent()) break;
         btnDown = true;
         btnDl = nowMs() + BTN_HOLD_MS;
       } else if (!m && btnDown) {
@@ -243,7 +244,7 @@ static void debounce(uint8_t pin) {
 static void ledCb(void*) {
   static uint32_t t;
   t++;
-  if (blePairing()) {
+  if (!bleMasterStored()) {
     uint32_t p = t % 40;
     ledSet((uint8_t)((p < 20 ? p : 40 - p) * 12));
     return;
@@ -292,6 +293,9 @@ static void task(void*) {
     }
   }
 }
+
+uint8_t lockState() { return (uint8_t)st; }
+uint8_t lockFaults() { return faults; }
 
 void lockInit() {
   q = xQueueCreate(16, sizeof(Msg));

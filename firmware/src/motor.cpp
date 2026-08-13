@@ -202,3 +202,8 @@ int batteryMv() {
   for (int i = 0; i < 16; i++) s += adcMv(ADC_CHANNEL_0);
   return s * 2 / 16;
 }
+
+uint8_t batteryPct() {
+  int p = (batteryMv() - 3300) * 100 / 900;
+  return (uint8_t)(p < 0 ? 0 : p > 100 ? 100 : p);
+}

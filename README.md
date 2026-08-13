@@ -4,6 +4,17 @@ A self-closing bike lock built as a clamshell ring. A fixed arc bolts to the hou
 
 <table>
 <tr>
+<td><img src="3d/housing_open.png" alt="Housing with the swing arc folded open and the latch pin retracted" width="100%"></td>
+<td><img src="3d/housing_closed.png" alt="Housing with the swing arc closed and the latch pin seated" width="100%"></td>
+</tr>
+</table>
+
+<img src="3d/lock_demo.gif" alt="Animated lock cycle" width="60%">
+
+The animation shows one closing cycle: the swing arc starts folded open, sweeps around to the receiver, and the latch pin seats.
+
+<table>
+<tr>
 <td><img src="3d/top.png" alt="Top view of the board" width="100%"></td>
 <td><img src="3d/bottom.png" alt="Bottom view of the board" width="100%"></td>
 <td><img src="3d/iso.png" alt="Angled view of the board" width="100%"></td>

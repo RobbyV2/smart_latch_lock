@@ -11,3 +11,4 @@ void boostOn();
 void boostOff();
 void ledSet(uint8_t duty);
 int batteryMv();
+uint8_t batteryPct();

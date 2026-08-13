@@ -4,6 +4,7 @@
 #include "motor.h"
 #include "lock.h"
 #include "ble.h"
+#include "web.h"
 
 void setup() {
   Serial.begin(115200);
@@ -12,16 +13,7 @@ void setup() {
   pinMode(PIN_BUTTON, INPUT_PULLUP);
   motorInit();
   bleInit();
-  if (!digitalRead(PIN_BUTTON)) {
-    uint32_t t0 = millis();
-    while (!digitalRead(PIN_BUTTON)) {
-      if (millis() - t0 >= BOND_CLEAR_HOLD_MS) {
-        bleClearBonds();
-        break;
-      }
-      delay(10);
-    }
-  }
+  webInit();
   lockInit();
   vTaskDelete(nullptr);
 }
