@@ -1,0 +1,15 @@
+{
+  "allowed_drc_markers": {},
+  "board_sha256": "d67ac48c2fea3dc0899a8547260d621fa0fa9514d35deaa8d859a7a73e93c679",
+  "copper_layers": [
+    "F.Cu",
+    "In1.Cu",
+    "In2.Cu",
+    "B.Cu"
+  ],
+  "drc_markers": {},
+  "finished_thickness_mm": 1.6,
+  "issues": [],
+  "passed": true,
+  "schema": 1
+}

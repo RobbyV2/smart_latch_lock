@@ -1,0 +1,7 @@
+{
+  "hw/stack-manifest.json": "a7df37b43d6a5da6c3eb27216b3f16f5e6074a12664eae5f4108169751a5d8ee",
+  "hw/triangle_flywheel_balancer.kicad_dru": "edd74546c3a662048c2f81cace7014020026bf6586abc6b7333db7df5644bfc7",
+  "hw/triangle_flywheel_balancer.kicad_pcb": "d67ac48c2fea3dc0899a8547260d621fa0fa9514d35deaa8d859a7a73e93c679",
+  "hw/triangle_flywheel_balancer.kicad_pro": "379974e722b0f0eb8e20ef7dc8fe0ff942564c6e9b13d67f0496493d056744d0",
+  "hw/triangle_flywheel_balancer.kicad_sch": "f64dd826a4f176fed02cc29821ec080ad304bc5843bfb5ef049d67274e1b04ec"
+}

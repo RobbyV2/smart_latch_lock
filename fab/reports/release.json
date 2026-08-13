@@ -1,0 +1,87 @@
+{
+  "assembly_audit": {
+    "issues": [],
+    "passed": true,
+    "report": "reports/assembly-audit.json",
+    "sha256": "7920b4693b45ef6231542751f9929fd4088010bdf71d59174cb054e0b0df741b"
+  },
+  "board_sha256": "d67ac48c2fea3dc0899a8547260d621fa0fa9514d35deaa8d859a7a73e93c679",
+  "circuit_audit": {
+    "issues": [],
+    "passed": true,
+    "report": "reports/circuit-audit.json",
+    "sha256": "334a4dba076ec2ca8e73350f8c9f1f5d2cfea8763bf2575c3e9c13cdb4ed7dc3"
+  },
+  "drc_audit": {
+    "issues": [],
+    "passed": true,
+    "report": "reports/drc-audit.json",
+    "sha256": "aab23e79ee3de06685ea76d79fc1a8f7fde71927e84509f2fd4257d234400342"
+  },
+  "dry_run": true,
+  "erc_audit": {
+    "issues": [],
+    "passed": true,
+    "report": "reports/erc-audit.json",
+    "sha256": "aab23e79ee3de06685ea76d79fc1a8f7fde71927e84509f2fd4257d234400342"
+  },
+  "fabrication": {
+    "artifacts": [
+      "triangle_flywheel_balancer-B_Cu.gbl",
+      "triangle_flywheel_balancer-F_Cu.gtl",
+      "triangle_flywheel_balancer-In1_Cu.g1",
+      "triangle_flywheel_balancer-In2_Cu.g2",
+      "triangle_flywheel_balancer-NPTH.drl",
+      "triangle_flywheel_balancer-PTH.drl"
+    ],
+    "copper_layer_count": 4,
+    "finished_thickness_mm": 1.6
+  },
+  "first_article_orderable": false,
+  "geometry_audit": {
+    "issues": [],
+    "passed": true,
+    "report": "reports/geometry.json",
+    "sha256": "8d36eb42fc6707bf1d7044fc063d13e81a494e9d7587ec76453b5240fc84c087"
+  },
+  "hard_failures": [],
+  "issues": [
+    "blocker: stock_audit",
+    "blocker: vendor_approval"
+  ],
+  "manifest_sha256": "a7df37b43d6a5da6c3eb27216b3f16f5e6074a12664eae5f4108169751a5d8ee",
+  "orderable": false,
+  "passed": false,
+  "production_orderable": false,
+  "release_blockers": [
+    "stock_audit",
+    "vendor_approval"
+  ],
+  "release_class": "REVIEW",
+  "source_contract_audit": {
+    "issues": [],
+    "passed": true,
+    "report": "reports/source-contract.json",
+    "sha256": "76190283ff88d5f34917e41448765e3431da18470ad1efd1ee8cb38598c0addd"
+  },
+  "stack_audit": {
+    "issues": [],
+    "passed": true,
+    "report": "reports/stack-audit.json",
+    "sha256": "4c022552baaf5b48feda55587b31f78fd04e6a136480d0db18e3d8be74bc63b2"
+  },
+  "stock_audit": {
+    "issues": [
+      "live stock audit was skipped"
+    ],
+    "passed": false,
+    "report": "reports/stock-audit.json",
+    "sha256": "47c835b4137494b8faa628e6cea06502adfe461a0e15ab59ba77fd7b898556eb"
+  },
+  "vendor_approval": {
+    "issues": [
+      "missing"
+    ],
+    "passed": false
+  }
+}

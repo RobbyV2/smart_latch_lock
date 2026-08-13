@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "triangle_flywheel_balancer")(type "KiCad")(uri "${KIPRJMOD}/../lib/footprints/triangle_flywheel_balancer.pretty")(options "")(descr "Local project library"))
+)

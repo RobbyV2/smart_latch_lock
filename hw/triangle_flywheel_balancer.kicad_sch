@@ -1,0 +1,18 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "c7b3ff13-a561-4298-9cce-fe73dbe7cb85")
+	(paper "A4")
+	(title_block
+		(title "triangle flywheel balancer")
+		(rev "A")
+	)
+	(lib_symbols)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

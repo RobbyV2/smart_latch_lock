@@ -1,0 +1,19 @@
+{
+  "allowed_drc_markers": {},
+  "board": "triangle_flywheel_balancer.kicad_pcb",
+  "layer_stack": {
+    "copper_layers": [
+      "F.Cu",
+      "In1.Cu",
+      "In2.Cu",
+      "B.Cu"
+    ],
+    "finished_thickness_mm": 1.6
+  },
+  "rules": "triangle_flywheel_balancer.kicad_dru",
+  "schema": 1,
+  "source_hashes": {
+    "board_sha256": "d67ac48c2fea3dc0899a8547260d621fa0fa9514d35deaa8d859a7a73e93c679",
+    "rules_sha256": "edd74546c3a662048c2f81cace7014020026bf6586abc6b7333db7df5644bfc7"
+  }
+}
