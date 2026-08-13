@@ -1,19 +1,19 @@
 {
   "by_top_directory": {
     "assembly": {
-      "bytes": 151,
+      "bytes": 6993,
       "files": 2
     },
     "gerbers": {
-      "bytes": 9637,
+      "bytes": 872802,
       "files": 14
     },
     "netlist.ipc": {
-      "bytes": 47,
+      "bytes": 32533,
       "files": 1
     },
     "reports": {
-      "bytes": 6841,
+      "bytes": 18727,
       "files": 12
     },
     "stack-manifest.json": {
@@ -25,157 +25,157 @@
       "files": 1
     }
   },
-  "bytes_excluding_inventory": 17401,
+  "bytes_excluding_inventory": 931780,
   "files": [
     {
-      "bytes": 78,
+      "bytes": 3744,
       "path": "assembly/A/bom.csv",
-      "sha256": "d502793b6821bd8eedc04a1b2120e3f58e9976bb94c8f397f9f65de47d841dcd"
+      "sha256": "b641f62b72e06c75d96a46e9bef6c0ac4144d573597b5f27c9bc99d1cb01198c"
     },
     {
-      "bytes": 73,
+      "bytes": 3249,
       "path": "assembly/A/centroid.csv",
-      "sha256": "8e18532e86d2648edbaf99d29b051c171198d710d4a69a88d5271454c894c4ed"
+      "sha256": "17d7521f49698924c26f6dc28765dcb248722e3a53012fbdaae40ba854aade8b"
     },
     {
-      "bytes": 475,
+      "bytes": 119436,
       "path": "gerbers/triangle_flywheel_balancer-B_Cu.gbl",
-      "sha256": "20fe04c153b99ae0debb240f6612152b55cbd0fabf74008b44dddf599898e705"
+      "sha256": "f286810bc7be363273601586a57e51d50297b64ef3f90758325a30454f8af55c"
     },
     {
-      "bytes": 476,
+      "bytes": 2313,
       "path": "gerbers/triangle_flywheel_balancer-B_Mask.gbs",
-      "sha256": "1251d06a55a5639c807dace3ad5dd07ee409cab6e9880437bcde5cbeb19f5406"
+      "sha256": "053389b5c67ea745318df96a1e8c4507560904332edded95bfa46dbe4c3a4f8a"
     },
     {
       "bytes": 471,
       "path": "gerbers/triangle_flywheel_balancer-B_Paste.gbp",
-      "sha256": "ac8225634129096990a5c66490d4632d0c99d04add0d3053d210fa63afadd752"
+      "sha256": "9e78f5743186205f53fbcf483ef243bdb92c2940a83cca539ad6ddea948cd522"
     },
     {
-      "bytes": 486,
+      "bytes": 2323,
       "path": "gerbers/triangle_flywheel_balancer-B_Silkscreen.gbo",
-      "sha256": "ec086b7f597ed4c7e6da8e41935ee3599ee701cb9c03126c302b433956606a3e"
+      "sha256": "b844db53c4eeae8d559189bc3d4ff666cb72eea25cb5ae2fe312ab892074fd1d"
     },
     {
-      "bytes": 631,
+      "bytes": 1019,
       "path": "gerbers/triangle_flywheel_balancer-Edge_Cuts.gm1",
-      "sha256": "b1039c3eea79b26c229f79f6d3b013876aeed435bc341d1f3406d95adb7de975"
+      "sha256": "bc868b2f19abb3f7e869f72741f67b5740fde62d6a20313de1c1d9d6c6c92d45"
     },
     {
-      "bytes": 475,
+      "bytes": 215087,
       "path": "gerbers/triangle_flywheel_balancer-F_Cu.gtl",
-      "sha256": "0b049da88e5028273773c1f95b33b652d4ceb21015633cca26e7ec2b942c2ad4"
+      "sha256": "89fbf52d277585214a77a2e0b0698c03989ab8be3744a072bdb8a49592727f10"
     },
     {
-      "bytes": 476,
+      "bytes": 12327,
       "path": "gerbers/triangle_flywheel_balancer-F_Mask.gts",
-      "sha256": "2646ca5fb9e0409beb02f87da0e9a74bf66fbec238716d5ca55d8927e54aa834"
+      "sha256": "b7d6f00b37e6e7e47bb3b90f18e8d2f10706c0588850f0eea692045e90e8b61d"
     },
     {
-      "bytes": 471,
+      "bytes": 11447,
       "path": "gerbers/triangle_flywheel_balancer-F_Paste.gtp",
-      "sha256": "0f22422d9d188368564a92f7b4e59632460db9f11d23fcbbbc9bda1cacbf1f13"
+      "sha256": "f832cf08b735bf2bd5bff5ace246162e009ac98131fef5df2790e3a31a230867"
     },
     {
-      "bytes": 486,
+      "bytes": 42999,
       "path": "gerbers/triangle_flywheel_balancer-F_Silkscreen.gto",
-      "sha256": "63ba2a21508cbc1300f3534e4db12b341c7eba3b0eb5c99032d6794344317b2a"
+      "sha256": "bbe1773eac1849b8431368892bb96ecbccbe15afd6af6857f9784130fd2b247f"
     },
     {
-      "bytes": 475,
+      "bytes": 133138,
       "path": "gerbers/triangle_flywheel_balancer-In1_Cu.g1",
-      "sha256": "2733fba4e845879f93c34ffde2fe5468843154cd39dcf6d0f9af2a3679e2daed"
+      "sha256": "648003975f718862256f74beebc564b18b17817e23426e0db97f3c1f6f327b01"
     },
     {
-      "bytes": 475,
+      "bytes": 324302,
       "path": "gerbers/triangle_flywheel_balancer-In2_Cu.g2",
-      "sha256": "bd127a5e62aa7a89087873a5c15e1e8cb39cab3372aa040612fd032c2bcd5569"
+      "sha256": "ac0f86f1ca3b552f19bbbe2724b1e2547bb89e57f3d9e6bfd3e15c07ed2b6102"
     },
     {
-      "bytes": 264,
+      "bytes": 478,
       "path": "gerbers/triangle_flywheel_balancer-NPTH.drl",
-      "sha256": "eba1f0640a3cae99698dd24a52a627a4f6147fec9a1b222303f50d2683542cd6"
+      "sha256": "7f1d9b277b5b03f13e63ed077aa3bb20e8991e576100b4ae8b52c4bc1b9f16e0"
     },
     {
-      "bytes": 260,
+      "bytes": 3600,
       "path": "gerbers/triangle_flywheel_balancer-PTH.drl",
-      "sha256": "43cb0e76a7342231b500d5d979d64e35e987730c948680760b041444c534304a"
+      "sha256": "4937ba2b651ad4daac0ece1f2488ac81a7dde6896e0f683c327d48f38a112af8"
     },
     {
-      "bytes": 3716,
+      "bytes": 3862,
       "path": "gerbers/triangle_flywheel_balancer-job.gbrjob",
-      "sha256": "d6c3817cd00c9f34b366269424eaf133da4e3b4dc8b63a3ce8d8f1b2752a3c8e"
+      "sha256": "32c5b506c2b6790663b193a02f0bad18699c736c52f2b8480ec5cbeae4b96c5d"
     },
     {
-      "bytes": 47,
+      "bytes": 32533,
       "path": "netlist.ipc",
-      "sha256": "5d67f656023d0735623240d4cf3fba095242c4133bc889133c3c543c7bcd71b0"
+      "sha256": "0f07ff1b66a86972ea63f119ccf44d167b2707b0caca97963ad18ce5ff5512f0"
     },
     {
-      "bytes": 177,
+      "bytes": 179,
       "path": "reports/assembly-audit.json",
-      "sha256": "7920b4693b45ef6231542751f9929fd4088010bdf71d59174cb054e0b0df741b"
+      "sha256": "d98b72fe9a6edd3447f789952550d3ed7e4221cb5c07dee5780dfa3b777dfd21"
     },
     {
-      "bytes": 254,
+      "bytes": 256,
       "path": "reports/circuit-audit.json",
-      "sha256": "334a4dba076ec2ca8e73350f8c9f1f5d2cfea8763bf2575c3e9c13cdb4ed7dc3"
+      "sha256": "af0a4b4ab3e6e9ea3db69971c9478a566f0e00eb35ec28d09cd771b6cb08977b"
     },
     {
       "bytes": 123,
       "path": "reports/drc-audit.json",
-      "sha256": "aab23e79ee3de06685ea76d79fc1a8f7fde71927e84509f2fd4257d234400342"
+      "sha256": "5514dbee6afdb06c8cb8a0e4f513bd9f8da2ce1ed04b1c83a1d21b5b5f054609"
     },
     {
       "bytes": 1104,
       "path": "reports/drc.json",
-      "sha256": "8769b05b739603951270c0f4569be12d28ec00a7af27e49333a151e272de3b95"
+      "sha256": "cc6fc526e8600c8eb8326d10c08c1a8f829f42045a594a9713a3dd875d076991"
     },
     {
       "bytes": 123,
       "path": "reports/erc-audit.json",
-      "sha256": "aab23e79ee3de06685ea76d79fc1a8f7fde71927e84509f2fd4257d234400342"
+      "sha256": "5514dbee6afdb06c8cb8a0e4f513bd9f8da2ce1ed04b1c83a1d21b5b5f054609"
     },
     {
       "bytes": 1020,
       "path": "reports/erc.json",
-      "sha256": "6cd18f32cf5d2e6afbdec4577c957853ee279859a96708c620ae18421112d7a3"
+      "sha256": "ae009b7e19c990741e2f3053b949a7b1fe5b9005abddb8a6fc41921d3888ea48"
     },
     {
       "bytes": 204,
       "path": "reports/geometry.json",
-      "sha256": "8d36eb42fc6707bf1d7044fc063d13e81a494e9d7587ec76453b5240fc84c087"
+      "sha256": "7d33f8c167b0f374c82da5a69d69fe4f22858c218a0675b9bbeb2d5e8162a2b2"
     },
     {
-      "bytes": 2515,
+      "bytes": 2425,
       "path": "reports/release.json",
-      "sha256": "40147d277db0638df0af19a2de2bd8ff5f17468454349e952cf8630b7065808f"
+      "sha256": "9171f81bbeccabef27b0e7900dd9f9fe903020c67c0bb977fec373628b6ec5c5"
     },
     {
       "bytes": 243,
       "path": "reports/source-contract.json",
-      "sha256": "76190283ff88d5f34917e41448765e3431da18470ad1efd1ee8cb38598c0addd"
+      "sha256": "2eaccea5b7dcaf774598a84b41fd460c1d564cce4963f252fdd41cc836f23c86"
     },
     {
       "bytes": 551,
       "path": "reports/source-sha256.json",
-      "sha256": "82f4d62389ce94ac793e5a7f9a82750a9617719b2e2ac3a0378274b68920b214"
+      "sha256": "f3a0a8736adee08eb53b7934cc060e71514656264d267b2740d027577e017403"
     },
     {
       "bytes": 297,
       "path": "reports/stack-audit.json",
-      "sha256": "4c022552baaf5b48feda55587b31f78fd04e6a136480d0db18e3d8be74bc63b2"
+      "sha256": "aba526159811e0ad52e0ddbbf90110a863db43bb72866615fe3d3e4934f73daa"
     },
     {
-      "bytes": 230,
+      "bytes": 12202,
       "path": "reports/stock-audit.json",
-      "sha256": "47c835b4137494b8faa628e6cea06502adfe461a0e15ab59ba77fd7b898556eb"
+      "sha256": "b7857a1b355214dd57ed0fb80e2e1ffad230e731e64ffaf413ab5af1584d2b21"
     },
     {
       "bytes": 496,
       "path": "stack-manifest.json",
-      "sha256": "a7df37b43d6a5da6c3eb27216b3f16f5e6074a12664eae5f4108169751a5d8ee"
+      "sha256": "87d5be79dd40903135ce233fced279015a40a576f53f37509aae97139b633361"
     },
     {
       "bytes": 229,

@@ -1,6 +1,6 @@
-# Triangle Flywheel Balancer
+# Folding-Arc Bike Lock
 
-This repository holds the KiCad hardware design for the triangle flywheel balancer board. The board is a 4-layer rigid PCB with a 1.6 mm finished thickness. The schematic, the board, the part libraries, and the fabrication scripts live here. The design is not complete, so the specifications below list only the values that are fixed.
+A self-closing bike lock built as a clamshell ring. A fixed arc bolts to the housing, a hinged arc swings 180 degrees to meet it, and a worm gearmotor closes the loop around the frame and rim on a button press or a BLE command. A spring latch pin seats with power off, a keyed cam lock covers a dead battery, and an ESP32-C3 on a 4-layer PCB runs the state machine.
 
 <table>
 <tr>
@@ -10,32 +10,24 @@ This repository holds the KiCad hardware design for the triangle flywheel balanc
 </tr>
 </table>
 
-## Specifications
-
-| Item | Value |
-|---|---|
-| Board size | TBD |
-| Copper layers | 4 |
-| Finished thickness | 1.6 mm |
-| Surface finish | TBD |
-
-Read `docs/design.md` for the full stack table and the via inventory.
+Read `docs/design.md` for the mechanism, the torque analysis, and the electronics.
 
 ## Repository layout
 
 - `hw/` holds the KiCad schematic, the board, the design rules, and the stack manifest.
 - `lib/` holds the symbols, the footprints, and the 3D models.
-- `scripts/` holds the release script, the panel tools, and the validation scripts.
+- `firmware/` holds the PlatformIO project for the ESP32-C3.
+- `3d/` holds the OpenSCAD housing, the board render script, and the renders.
+- `scripts/` holds the release script and the validation scripts.
 - `fab/` holds the fabrication data, written by `scripts/release.sh`.
-- `docs/` holds the design specification and the vendor order gate.
-- `3d/` holds the 3D build script, the three renders, and the viewer page.
 
-## Build the 3D output
+## Build
+
 ```
+pio run -d firmware
+openscad -o temp/arc_swing.stl -D 'part="arc_swing"' 3d/housing.scad
 python3 3d/build.py
+scripts/release.sh hw/triangle_flywheel_balancer.kicad_pcb
 ```
 
-## Build the fabrication tree
-```
-TFB_DRY_RUN=1 scripts/release.sh hw/triangle_flywheel_balancer.kicad_pcb
-```
+The first command builds the firmware, the second renders one housing part (`housing_inner`, `housing_lid`, `arc_fixed`, `arc_swing`, `latch_pin`, `assembly`), the third writes the board renders and the viewer page, and the fourth writes the fabrication tree.

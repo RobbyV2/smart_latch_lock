@@ -13,7 +13,7 @@
   "rules": "triangle_flywheel_balancer.kicad_dru",
   "schema": 1,
   "source_hashes": {
-    "board_sha256": "d67ac48c2fea3dc0899a8547260d621fa0fa9514d35deaa8d859a7a73e93c679",
-    "rules_sha256": "edd74546c3a662048c2f81cace7014020026bf6586abc6b7333db7df5644bfc7"
+    "board_sha256": "bc930e112d5b4910b22a8cdb2621ad7ebee312137c50c97b13d8f0ef07fbf019",
+    "rules_sha256": "a11172835c05a7a46477a84f9b69aa1be07ad87fc2931a28342c48f7a6fc012c"
   }
 }

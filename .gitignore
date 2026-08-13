@@ -1,5 +1,6 @@
 .venv/
 .venv_research/
+.pio/
 temp/
 __pycache__/
 .easyeda_cache/
@@ -23,3 +24,6 @@ log_*.txt
 
 .release-build/
 fab.previous.*/
+
+3d/*.glb
+3d/*.html
