@@ -434,4 +434,15 @@
 		(uuid "294c6cfd-23ff-4056-bec9-d0e2062c1a35")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/SW_Push_1TS009xxxx-xxxx-xxxx_6x6x5mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

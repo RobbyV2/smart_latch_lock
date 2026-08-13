@@ -98,4 +98,15 @@
 		(roundrect_rratio 0.217391)
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_1210_3225Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

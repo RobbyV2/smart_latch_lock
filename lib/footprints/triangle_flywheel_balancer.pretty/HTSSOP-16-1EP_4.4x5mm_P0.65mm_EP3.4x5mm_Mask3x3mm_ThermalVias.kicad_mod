@@ -497,4 +497,15 @@
 		(uuid "ea4a4e66-8cdf-4141-bf2e-dbe491ff7c57")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3x3mm_ThermalVias.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

@@ -286,4 +286,15 @@
 		(roundrect_rratio 0.25)
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/TSSOP-8_4.4x3mm_P0.65mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

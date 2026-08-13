@@ -1,4 +1,6 @@
 part = "assembly";
+swing = 0; // 0 closed, 180 folded open
+pin_lift = 0; // 0 seated, 3 retracted
 
 enclosed_dia = 160; // valid 120-220
 arc_w = 20;
@@ -153,7 +155,7 @@ module servo_void()
 
 gearbox_cx = -(Rc - jgy_shaft_from_end) - jgy_gear[0]/2;
 
-module housing_lid() difference() {
+module housing_lid(arc=true) difference() {
   union() {
     difference() {
       linear_extrude(H - seam) plan2d();
@@ -161,7 +163,7 @@ module housing_lid() difference() {
     }
     translate([0,0,-1.4]) linear_extrude(1.4) difference()
       { offset(-0.75) plan2d(); offset(-1.75) plan2d(); }
-    translate([0,0,-seam]) fixed_arc_solid();
+    if (arc) translate([0,0,-seam]) fixed_arc_solid();
     translate([hx, 0, H - seam]) cylinder(d=11, h=3);
   }
   translate([hx, 0, -2]) cylinder(d=jgy_shaft_d + 0.6, h=H - seam + 5.5);
@@ -216,9 +218,10 @@ module arc_fixed() difference() {
 
 module assembly() {
   color("dimgray") housing_inner();
-  color("slategray") translate([0,0,seam]) housing_lid();
-  color("orange") arc_swing();
-  color("silver") latch_pin_part();
+  color("slategray") translate([0,0,seam]) housing_lid(arc=false);
+  color("steelblue") arc_fixed();
+  color("orange") translate([hx,0,0]) rotate([0,0,swing]) translate([-hx,0,0]) arc_swing();
+  color("crimson") translate([pin_lift,0,0]) latch_pin_part();
 }
 
 if (part == "housing_inner") housing_inner();

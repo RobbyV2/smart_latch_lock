@@ -3,27 +3,27 @@
     "issues": [],
     "passed": true,
     "report": "reports/assembly-audit.json",
-    "sha256": "d98b72fe9a6edd3447f789952550d3ed7e4221cb5c07dee5780dfa3b777dfd21"
+    "sha256": "f664db6c83b15dcf67ba99fd5b696f1e9a675ce1b2052c2c224622b357db64f0"
   },
-  "board_sha256": "bc930e112d5b4910b22a8cdb2621ad7ebee312137c50c97b13d8f0ef07fbf019",
+  "board_sha256": "a65bdb4e23f2a3af44e4f1881cb911829819458fad38838c6bdd0de664c56d16",
   "circuit_audit": {
     "issues": [],
     "passed": true,
     "report": "reports/circuit-audit.json",
-    "sha256": "af0a4b4ab3e6e9ea3db69971c9478a566f0e00eb35ec28d09cd771b6cb08977b"
+    "sha256": "04b93eccffa1b44e7af817d05e186e95d4b111442bbad7fe0ca1bfe93e2e289b"
   },
   "drc_audit": {
     "issues": [],
     "passed": true,
     "report": "reports/drc-audit.json",
-    "sha256": "5514dbee6afdb06c8cb8a0e4f513bd9f8da2ce1ed04b1c83a1d21b5b5f054609"
+    "sha256": "f25ffe675e67bd17db9d45d407a03076dca8d7fd406ce07def05638386bdef8a"
   },
   "dry_run": true,
   "erc_audit": {
     "issues": [],
     "passed": true,
     "report": "reports/erc-audit.json",
-    "sha256": "5514dbee6afdb06c8cb8a0e4f513bd9f8da2ce1ed04b1c83a1d21b5b5f054609"
+    "sha256": "f25ffe675e67bd17db9d45d407a03076dca8d7fd406ce07def05638386bdef8a"
   },
   "fabrication": {
     "artifacts": [
@@ -42,13 +42,13 @@
     "issues": [],
     "passed": true,
     "report": "reports/geometry.json",
-    "sha256": "7d33f8c167b0f374c82da5a69d69fe4f22858c218a0675b9bbeb2d5e8162a2b2"
+    "sha256": "e2e405082b6011355e37963a060ce8c15e4517d13275681c353af968c4967b72"
   },
   "hard_failures": [],
   "issues": [
     "blocker: vendor_approval"
   ],
-  "manifest_sha256": "87d5be79dd40903135ce233fced279015a40a576f53f37509aae97139b633361",
+  "manifest_sha256": "6023610767ee418e86465cd85ed23a6dd29c6c14089ca7155f9f7670176dd6a6",
   "orderable": false,
   "passed": false,
   "production_orderable": false,
@@ -60,19 +60,19 @@
     "issues": [],
     "passed": true,
     "report": "reports/source-contract.json",
-    "sha256": "2eaccea5b7dcaf774598a84b41fd460c1d564cce4963f252fdd41cc836f23c86"
+    "sha256": "b5178c93d659b0d5ef0b955b6da273bbc485d9447992e9efe1cae23637dea780"
   },
   "stack_audit": {
     "issues": [],
     "passed": true,
     "report": "reports/stack-audit.json",
-    "sha256": "aba526159811e0ad52e0ddbbf90110a863db43bb72866615fe3d3e4934f73daa"
+    "sha256": "c821a24ea78f29d5bae9fbd0c2aebf94d8b640eaf91832a0a42e7bd59f00c351"
   },
   "stock_audit": {
     "issues": [],
     "passed": true,
     "report": "reports/stock-audit.json",
-    "sha256": "b7857a1b355214dd57ed0fb80e2e1ffad230e731e64ffaf413ab5af1584d2b21"
+    "sha256": "f8d51946d3a8ce3894452a072e0ef151761fd92b4581a0104d89f1f2afa37541"
   },
   "vendor_approval": {
     "issues": [

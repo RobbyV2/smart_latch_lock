@@ -316,6 +316,17 @@
 			(uuid "f8694081-a809-4524-9e31-1a2968d516e9")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -489,6 +500,17 @@
 			(uuid "80d70c4a-1f02-4a08-a486-4c74986803d0")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:SOT-23-6"
 		(layer "F.Cu")
@@ -856,6 +878,17 @@
 			(uuid "bbbd22d8-3549-4789-9cc7-c158e16dba08")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/SOT-23-6.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -1029,6 +1062,17 @@
 			(uuid "06f38183-5d41-4dfd-a630-e5a742ea68ba")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:LED_0603_1608Metric"
 		(layer "F.Cu")
@@ -1251,6 +1295,17 @@
 			(uuid "be4f9724-d188-4ab9-99e0-e321216e5abf")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/LED_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -1423,6 +1478,17 @@
 			(uuid "58a500ec-66d0-454f-94c0-ab5d9da6216c")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -1596,6 +1662,17 @@
 			(uuid "1daeba5d-2bf5-4979-abe2-8a62d3848325")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -1769,6 +1846,17 @@
 			(uuid "ecd095e7-4e82-4075-9214-e3fb05b08d9c")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -1942,6 +2030,17 @@
 			(uuid "d168192c-4d41-4343-af96-cade2cf565cb")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -2115,6 +2214,17 @@
 			(uuid "b10f1f37-4b43-4a42-afa0-e4622abf4ef5")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:TSSOP-8_4.4x3mm_P0.65mm"
 		(layer "F.Cu")
@@ -2498,6 +2608,17 @@
 			(uuid "f89bb2c2-b3a2-46c7-b2c7-bcd173cd5ccd")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/TSSOP-8_4.4x3mm_P0.65mm.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -2671,6 +2792,17 @@
 			(uuid "13a068ad-1099-426f-8856-89317f2cd301")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -2844,6 +2976,17 @@
 			(uuid "cda6b376-1cd3-4f2b-ad60-cc6494b88fea")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_0805_2012Metric"
 		(layer "F.Cu")
@@ -3016,6 +3159,17 @@
 			(uuid "aa911c95-f104-4a39-8506-404aab60783e")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0805_2012Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -3189,6 +3343,17 @@
 			(uuid "2e4617b7-4048-4875-b7b9-2d7a70547853")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
@@ -3443,6 +3608,17 @@
 			(uuid "562c3fdd-fb66-42bd-8953-6155234f77d8")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_1210_3225Metric"
 		(layer "F.Cu")
@@ -3615,6 +3791,17 @@
 			(uuid "df9d543b-7551-4f5d-976f-51350e5bdd81")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_1210_3225Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:MountingHole_3.2mm_M2.5"
 		(layer "F.Cu")
@@ -3871,6 +4058,17 @@
 			(uuid "c4c54079-4bd2-4f10-808b-662f974dd176")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -4044,6 +4242,17 @@
 			(uuid "73c0385e-167c-47d4-8215-d3398c149d16")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -4216,6 +4425,17 @@
 			(uuid "25eb9557-5219-4eec-af52-eca151983f9f")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -4389,6 +4609,17 @@
 			(uuid "263a9850-df9b-4ed9-8b07-2e239317a437")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
@@ -4643,6 +4874,17 @@
 			(uuid "76bc90d5-d6dc-4cd0-b52d-758d5ae32750")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:SOT-23-5"
 		(layer "F.Cu")
@@ -5052,6 +5294,17 @@
 			(uuid "e9a4071c-8ad8-46c9-b66d-facd4894fc82")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/SOT-23-5.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -5225,6 +5478,17 @@
 			(uuid "191936df-5fa6-438f-86b7-4495187db55d")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -5398,6 +5662,17 @@
 			(uuid "2fe387b5-60b9-47e6-b69e-bf983aae813d")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 		(layer "F.Cu")
@@ -5795,6 +6070,17 @@
 			(uuid "d1d0e25f-0b75-4769-9d25-8d1d0df74108")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
 		(layer "F.Cu")
@@ -6214,6 +6500,17 @@
 			(uuid "80c27db8-0812-49fb-bbd9-005e56036304")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -6387,6 +6684,17 @@
 			(uuid "3eb4d85c-bdab-4ab3-96ff-e0fe1fe64ca5")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:SOT-23-6"
 		(layer "F.Cu")
@@ -6754,6 +7062,17 @@
 			(uuid "2560e4c0-71c0-4e82-9ef6-d9748a1a5b76")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/SOT-23-6.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -6927,6 +7246,17 @@
 			(uuid "0346fbd7-c53f-4942-809b-383aa352af26")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:MountingHole_3.2mm_M2.5"
 		(layer "F.Cu")
@@ -7580,6 +7910,17 @@
 			(uuid "d7949802-448d-4b6e-a7ee-125b94f31993")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3x3mm_ThermalVias.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:SOT-23-5"
 		(layer "F.Cu")
@@ -7989,6 +8330,17 @@
 			(uuid "eace9109-341b-4c24-b032-eb6af9d7fe58")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/SOT-23-5.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:MountingHole_3.2mm_M2.5"
 		(layer "F.Cu")
@@ -8245,6 +8597,17 @@
 			(uuid "4dcb1a42-979c-4c26-8af6-a46185f42e2b")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:PinHeader_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
@@ -8508,6 +8871,17 @@
 			(uuid "a1468c23-8d4b-4786-9495-5ef75296117d")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -8681,6 +9055,17 @@
 			(uuid "94c1bb93-d787-4c4d-9d8f-e9bc97a878a8")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:SW_Push_1TS009xxxx-xxxx-xxxx_6x6x5mm"
 		(layer "F.Cu")
@@ -9157,6 +9542,17 @@
 			(uuid "f8998c6c-a65b-4818-a898-8da17bbf361d")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/SW_Push_1TS009xxxx-xxxx-xxxx_6x6x5mm.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_0805_2012Metric"
 		(layer "F.Cu")
@@ -9329,6 +9725,17 @@
 			(uuid "6898a361-858f-4f94-a8c9-e904434c2668")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0805_2012Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:PinHeader_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
@@ -9583,6 +9990,17 @@
 			(uuid "4afe34d3-e54e-4e06-99b9-4ecc47be8108")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 		(layer "F.Cu")
@@ -9980,6 +10398,17 @@
 			(uuid "3f198cb3-c3de-4eb4-9563-2057c7cbd78a")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:SOT-353_SC-70-5"
 		(layer "F.Cu")
@@ -10389,6 +10818,17 @@
 			(uuid "f5d0c4b5-3693-49c2-8e2f-c57afac4bd76")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/SOT-353_SC-70-5.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -10561,6 +11001,17 @@
 			(uuid "070e67df-ceea-4937-8fd7-e25744aea1b7")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -10734,6 +11185,17 @@
 			(uuid "4698bec6-b744-4205-a7f0-6144353f7be6")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -10907,6 +11369,17 @@
 			(uuid "549c40cd-ee98-41ba-b7f2-654664749662")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -11080,6 +11553,17 @@
 			(uuid "6863b634-bc6e-47a4-bf31-33beb23984ef")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -11253,6 +11737,17 @@
 			(uuid "d5716dd0-f5a8-4e9f-ba1e-f4ba18d650ea")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:SOT-563"
 		(layer "F.Cu")
@@ -11580,6 +12075,17 @@
 			(uuid "dae16dc2-d389-4fd7-9bc1-93a224008e8f")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/SOT-563.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -11753,6 +12259,17 @@
 			(uuid "18cb93e1-9633-458a-b66c-2a2fc09d9d94")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_0805_2012Metric"
 		(layer "F.Cu")
@@ -11925,6 +12442,17 @@
 			(uuid "b1425ea5-8769-4b65-aee7-9b39061b8acb")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0805_2012Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -12098,6 +12626,17 @@
 			(uuid "5c6cb19b-5cf1-464b-847b-4bff443391e1")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -12271,6 +12810,17 @@
 			(uuid "c6d6be32-11aa-48f8-8deb-f08bbe1beb3a")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:ESP32-C3-MINI-1"
 		(layer "F.Cu")
@@ -13015,6 +13565,17 @@
 			)
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/ESP32-C3-MINI-1.step"
+			(offset
+				(xyz -6.6 -8.37 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -13188,6 +13749,17 @@
 			(uuid "c58972bc-6173-4a67-a906-cb5f3893801c")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -13361,6 +13933,17 @@
 			(uuid "1e60b014-eaa9-447a-9898-bfe0de518a4f")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/R_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:L_Murata_DFE201610P"
 		(layer "F.Cu")
@@ -13534,6 +14117,17 @@
 			(uuid "c7652985-95ae-4c02-bd1e-3acf6d203d39")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/L_Murata_DFE201610P.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -13707,6 +14301,17 @@
 			(uuid "b434d403-199e-4d55-8bc8-183e061fc1e2")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_0805_2012Metric"
 		(layer "F.Cu")
@@ -13879,6 +14484,17 @@
 			(uuid "ddc5a8c8-ae97-48e8-a696-e1309ea42493")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0805_2012Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -14052,6 +14668,17 @@
 			(uuid "d0b97f61-1328-442c-a01f-7a7edfb7d497")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_0603_1608Metric"
 		(layer "F.Cu")
@@ -14224,6 +14851,17 @@
 			(uuid "be1a36b3-8e44-40b0-8ff2-9faa92242080")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:LED_0603_1608Metric"
 		(layer "F.Cu")
@@ -14446,6 +15084,17 @@
 			(uuid "8a9cb47d-67f2-440f-a9b6-62ab00b8e95c")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/LED_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -14619,6 +15268,17 @@
 			(uuid "e8576027-2123-404c-a21c-7df9d5561504")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../lib/3dmodels/triangle_flywheel_balancer.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "triangle_flywheel_balancer:MountingHole_3.2mm_M2.5"
 		(layer "F.Cu")
