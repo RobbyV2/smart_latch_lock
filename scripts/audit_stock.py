@@ -50,7 +50,7 @@ def main():
     now = datetime.datetime.now(datetime.timezone.utc).isoformat()
     demand = {}
     for row in csv.DictReader((args.assembly / args.population / "bom.csv").open(newline="")):
-        key = (row["Manufacturer"], row["MPN"], row["Distributor Part Number"].strip())
+        key = (row["Manufacturer"], row["MPN"], row["LCSC Part #"].strip())
         demand[key] = demand.get(key, 0) + int(row["Quantity"])
     for (manufacturer, mpn, route), quantity in sorted(demand.items()):
         required = math.ceil(quantity * OVERAGE)

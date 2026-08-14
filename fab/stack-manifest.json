@@ -8,12 +8,12 @@
       "In2.Cu",
       "B.Cu"
     ],
-    "finished_thickness_mm": 1.6
+    "finished_thickness_mm": 1.5862
   },
   "rules": "triangle_flywheel_balancer.kicad_dru",
   "schema": 1,
   "source_hashes": {
-    "board_sha256": "a65bdb4e23f2a3af44e4f1881cb911829819458fad38838c6bdd0de664c56d16",
+    "board_sha256": "57c50b39fcb73d2dcde51b914df14ff59cf120190562c9a272a5cb6cec15397e",
     "rules_sha256": "a11172835c05a7a46477a84f9b69aa1be07ad87fc2931a28342c48f7a6fc012c"
   }
 }

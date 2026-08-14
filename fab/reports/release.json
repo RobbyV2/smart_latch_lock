@@ -3,27 +3,27 @@
     "issues": [],
     "passed": true,
     "report": "reports/assembly-audit.json",
-    "sha256": "f664db6c83b15dcf67ba99fd5b696f1e9a675ce1b2052c2c224622b357db64f0"
+    "sha256": "2fe2403c92749dee49135c0244a21fcb2e0dd9900049771c80a7090598c92a6e"
   },
-  "board_sha256": "a65bdb4e23f2a3af44e4f1881cb911829819458fad38838c6bdd0de664c56d16",
+  "board_sha256": "57c50b39fcb73d2dcde51b914df14ff59cf120190562c9a272a5cb6cec15397e",
   "circuit_audit": {
     "issues": [],
     "passed": true,
     "report": "reports/circuit-audit.json",
-    "sha256": "04b93eccffa1b44e7af817d05e186e95d4b111442bbad7fe0ca1bfe93e2e289b"
+    "sha256": "c4b7f115850c8e9596c1b0aa5bd154e9851700881e73645e4a6b3acf64873ad7"
   },
   "drc_audit": {
     "issues": [],
     "passed": true,
     "report": "reports/drc-audit.json",
-    "sha256": "f25ffe675e67bd17db9d45d407a03076dca8d7fd406ce07def05638386bdef8a"
+    "sha256": "1fb7cb4f71538dde7e34592eea0522e19e988f78220cc59b219661c47ba99105"
   },
   "dry_run": true,
   "erc_audit": {
     "issues": [],
     "passed": true,
     "report": "reports/erc-audit.json",
-    "sha256": "f25ffe675e67bd17db9d45d407a03076dca8d7fd406ce07def05638386bdef8a"
+    "sha256": "1fb7cb4f71538dde7e34592eea0522e19e988f78220cc59b219661c47ba99105"
   },
   "fabrication": {
     "artifacts": [
@@ -35,20 +35,20 @@
       "triangle_flywheel_balancer-PTH.drl"
     ],
     "copper_layer_count": 4,
-    "finished_thickness_mm": 1.6
+    "finished_thickness_mm": 1.5862
   },
   "first_article_orderable": false,
   "geometry_audit": {
     "issues": [],
     "passed": true,
     "report": "reports/geometry.json",
-    "sha256": "e2e405082b6011355e37963a060ce8c15e4517d13275681c353af968c4967b72"
+    "sha256": "ec14e284410605ac2be73454ca3b442a2f1709353e7d4334bc9115d9c72e2b22"
   },
   "hard_failures": [],
   "issues": [
     "blocker: vendor_approval"
   ],
-  "manifest_sha256": "6023610767ee418e86465cd85ed23a6dd29c6c14089ca7155f9f7670176dd6a6",
+  "manifest_sha256": "e0f4c28e5ec839c1dda8abd86ff036f8c1d1d746e8884e46e29dbb3a425382d6",
   "orderable": false,
   "passed": false,
   "production_orderable": false,
@@ -60,19 +60,19 @@
     "issues": [],
     "passed": true,
     "report": "reports/source-contract.json",
-    "sha256": "b5178c93d659b0d5ef0b955b6da273bbc485d9447992e9efe1cae23637dea780"
+    "sha256": "404f4ee0e0fd67159a07f5fb96e502604fe791a71ecba4350c02a9ae0ff92e6f"
   },
   "stack_audit": {
     "issues": [],
     "passed": true,
     "report": "reports/stack-audit.json",
-    "sha256": "c821a24ea78f29d5bae9fbd0c2aebf94d8b640eaf91832a0a42e7bd59f00c351"
+    "sha256": "b23eacc91f850be46522033fab324f3ef8bca5396940efa2fbb3dcc5192ef99c"
   },
   "stock_audit": {
     "issues": [],
     "passed": true,
     "report": "reports/stock-audit.json",
-    "sha256": "f8d51946d3a8ce3894452a072e0ef151761fd92b4581a0104d89f1f2afa37541"
+    "sha256": "58b6e1cc5e37f1b9bb3b828829e4e9ea9ed316f93121e9e6329f188c92dccd55"
   },
   "vendor_approval": {
     "issues": [

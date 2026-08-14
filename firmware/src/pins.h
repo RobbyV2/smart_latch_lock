@@ -12,7 +12,7 @@ constexpr int PIN_MOTOR_PH = 7;
 constexpr int PIN_LED = 8;
 constexpr int PIN_BUTTON = 9;
 constexpr int PIN_SERVO = 10;
-constexpr int PIN_DRV_NSLEEP = 20;
+constexpr int PIN_VBUS_DET = 20;
 constexpr int PIN_BOOST_EN = 21;
 
 constexpr uint32_t INRUSH_MASK_US = 120000;
@@ -26,6 +26,7 @@ constexpr int SOFT_STALL_SAMPLES = 20;
 constexpr int VBAT_MIN_LOCK_MV = 3300;
 constexpr uint32_t SERVO_RETRACT_US = 1000;
 constexpr uint32_t SERVO_RELEASE_US = 2000;
+constexpr uint32_t BOOST_OFF_MS = 50;
 
 constexpr char UUID_SVC[] = "8f1d0001-2f3a-4c6e-9b1d-6a0f5e3c7a42";
 constexpr char UUID_CMD[] = "8f1d0002-2f3a-4c6e-9b1d-6a0f5e3c7a42";
@@ -39,4 +40,4 @@ enum class Event : uint8_t {
   LatchSeated, LatchClear, Stall, Timeout, Raw
 };
 
-constexpr uint8_t F_STALL_HW = 0x01, F_STALL_SOFT = 0x02, F_TIMEOUT = 0x04, F_LATCH = 0x08, F_LOWBAT = 0x10;
+constexpr uint8_t F_STALL_HW = 0x01, F_STALL_SOFT = 0x02, F_TIMEOUT = 0x04, F_LATCH = 0x08, F_LOWBAT = 0x10, F_CHARGING = 0x20;

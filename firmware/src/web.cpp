@@ -28,6 +28,7 @@ input{background:#222;color:#eee;border:1px solid #444;border-radius:.4rem;paddi
 <h1>Lock</h1>
 <div id=state>...</div>
 <div id=batt class=dim></div>
+<div id=chg class=dim style=display:none>charging, lock disabled</div>
 <p><button onclick="post('/api/lock')">Lock</button><button onclick="post('/api/unlock')">Unlock</button></p>
 <h2>WiFi</h2>
 <input id=pw type=password placeholder="AP password, min 8 chars">
@@ -42,12 +43,13 @@ input{background:#222;color:#eee;border:1px solid #444;border-radius:.4rem;paddi
 const S=['Unlocked','Closing','Seating','Locked','Unlatching','Opening','Fault: obstructed','Fault: timeout'];
 async function post(u){await fetch(u,{method:'POST'});poll()}
 async function setPw(){const p=document.getElementById('pw').value;
-const r=await fetch('/api/wifi',{method:'POST',body:JSON.stringify({pass:p})});
+const r=await fetch('/api/wifi',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({pass:p})});
 alert(r.ok?'Saved, AP restarting':'Password must be at least 8 characters')}
 async function poll(){try{
 const s=await(await fetch('/api/state')).json();
 document.getElementById('state').textContent=S[s.state]||s.state;
 document.getElementById('batt').textContent='Battery '+s.batt+'%'+(s.faults?' / faults 0x'+s.faults.toString(16):'');
+document.getElementById('chg').style.display=s.charging?'':'none';
 const m=await(await fetch('/api/master')).json();
 document.getElementById('master').textContent=m.addr?m.addr+(m.connected?' / connected':' / away'):'none stored';
 document.getElementById('adopt').textContent=m.adopt?'Adopt next: armed':'Adopt next';
@@ -68,22 +70,37 @@ static String jsonField(const String& b, const char* key) {
   return e < 0 ? String("") : b.substring(a + 1, e);
 }
 
+static bool sameOrigin() {
+  String o = server.header("Origin");
+  if (o.length() == 0 || o == "http://192.168.4.1") return true;
+  server.send(403);
+  return false;
+}
+
 static void handlers() {
   server.on("/", HTTP_GET, [] { server.send(200, "text/html", PAGE); });
   server.on("/api/state", HTTP_GET, [] {
-    char b[64];
-    snprintf(b, sizeof b, "{\"state\":%u,\"faults\":%u,\"batt\":%u}", lockState(), lockFaults(), batteryPct());
+    char b[96];
+    snprintf(b, sizeof b, "{\"state\":%u,\"faults\":%u,\"batt\":%u,\"charging\":%s}", lockState(), lockFaults(),
+             batteryPct(), vbusPresent() ? "true" : "false");
     server.send(200, "application/json", b);
   });
   server.on("/api/lock", HTTP_POST, [] {
+    if (!sameOrigin()) return;
     lockPost(Event::CmdLock);
     server.send(200);
   });
   server.on("/api/unlock", HTTP_POST, [] {
+    if (!sameOrigin()) return;
     lockPost(Event::CmdUnlock);
     server.send(200);
   });
   server.on("/api/wifi", HTTP_POST, [] {
+    if (!sameOrigin()) return;
+    if (!server.header("Content-Type").startsWith("application/json")) {
+      server.send(415);
+      return;
+    }
     String p = jsonField(server.arg("plain"), "pass");
     if (p.length() < 8) {
       server.send(400, "text/plain", "min 8 chars");
@@ -101,10 +118,12 @@ static void handlers() {
     server.send(200, "application/json", b);
   });
   server.on("/api/master/delete", HTTP_POST, [] {
+    if (!sameOrigin()) return;
     bleMasterDelete();
     server.send(200);
   });
   server.on("/api/master/adopt", HTTP_POST, [] {
+    if (!sameOrigin()) return;
     bleAdoptToggle();
     server.send(200);
   });
@@ -119,6 +138,8 @@ void webInit() {
   WiFi.mode(WIFI_AP);
   apStart();
   handlers();
+  static const char* hdrs[] = {"Origin", "Content-Type"};
+  server.collectHeaders(hdrs, 2);
   server.begin();
   esp_timer_create_args_t a = {};
   a.callback = [](void*) { apStart(); };

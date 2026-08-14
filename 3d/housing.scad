@@ -17,8 +17,7 @@ jgy_shaft_flat = 2.55;
 jgy_shaft_from_end = 9;
 jgy_mount_dx = 33; jgy_mount_dy = 18;
 
-pcb = [55, 40, 1.6];
-pcb_inset = 3.5;
+pcb = [45, 34, 1.6];
 pcb_standoff = 5;
 bat = [34, 50, 11];
 d2f = [12.8, 5.8, 6.5];
@@ -82,7 +81,7 @@ module plan2d() offset(2) offset(-2) union() {
   }
   rbox(lobe_x0, -Ri, -lobe_hw, lobe_hw);
   rbox(rec_x0, rec_x1, rec_y0, rec_y1);
-  rbox(-pcb[0]/2 - 6, pcb[0]/2 + 6, pcb_wall_y, -Ri - 15); // flat wall bump clears PCB corners
+  rbox(-pcb[1]/2 - 6, pcb[1]/2 + 6, pcb_wall_y, -Ri - 15); // flat wall bump clears PCB corners
 }
 
 module cavity2d() offset(-wall) plan2d();
@@ -101,34 +100,38 @@ module d2f_pocket(depth)
     for (s=[-1,1]) translate([s*d2f_hole_pitch/2, 0, -6]) cylinder(d=1.9, h=6.1);
   }
 
-module wall_slot(ang, zc, w, h, d=wall+2) // radial slot through outer wall
-  rotate([0,0,ang]) translate([house_or + 1 - d, 0, zc]) rotate([0,90,0])
-    hull() for (s=[-1,1]) translate([0, s*(w-h)/2]) cylinder(d=h, h=d);
+pcb_c = [0, -(Ri + wall + pcb[0]/2 + 1)]; // long board axis along y, x=45 edge at the flat wall
+function bd(p) = pcb_c + [pcb[1]/2 - p[1], pcb[0]/2 - p[0]]; // board (x right, y down) to housing
+pcb_wall_y = pcb_c[1] - pcb[0]/2 - 0.3 - wall;
+pcb_holes = [for (p=[[3.5,3.5],[41.5,3.5],[3.5,30.5],[41.5,30.5]]) bd(p)];
+pcb_top = floor_t + pcb_standoff + pcb[2];
+usb_c = bd([pcb[0], 17]);
+usb_z = pcb_top + 1.9;
+btn_c = bd([34.1, 7.6]);
+btn_z = pcb_top + 5; // S4 plunger top
+lid_in = H - wall;
+btn_lift = 0.2; // free travel to the lid
+btn_stem = lid_in - btn_z - btn_lift - 1.2;
 
-pcb_c = [0, -(Ri + wall + pcb[1]/2 + 1)];
-pcb_wall_y = pcb_c[1] - pcb[1]/2 - 0.3 - wall;
-pcb_holes = [for (sx=[-1,1], sy=[-1,1])
-  pcb_c + [sx*(pcb[0]/2 - pcb_inset), sy*(pcb[1]/2 - pcb_inset)]];
-usb_z = floor_t + pcb_standoff + pcb[2] + 1.7;
-btn_a = 283; btn_z = usb_z + 1; // radial axis at PCB button corner
-btn_or = -pcb_wall_y/abs(sin(btn_a)); // outer face along button axis through flat bump
+module wall_slot(w, h, d) // rounded slot through the flat PCB wall
+  translate([usb_c[0], pcb_wall_y - 1, usb_z]) rotate([-90,0,0])
+    hull() for (s=[-1,1]) translate([s*(w-h)/2, 0, 0]) cylinder(d=h, h=d);
 
 module button_cap() {
-  cylinder(d=3, h=2);
-  translate([0,0,2]) cylinder(d=9, h=1.2);
-  translate([0,0,3.2]) cylinder(d=btn_d, h=1.8);
+  cylinder(d=3.4, h=btn_stem);
+  translate([0,0,btn_stem]) cylinder(d=9, h=1.2); // retaining flange, fitted from inside
+  translate([0,0,btn_stem+1.2]) cylinder(d=btn_d, h=H - 0.6 - btn_z - btn_stem - 1.2);
   intersection() {
-    translate([0,0,1.2]) sphere(r=5);
-    translate([0,0,5]) cylinder(d=btn_d, h=1.3);
+    translate([0,0,H - 0.6 - btn_z - 4.3]) sphere(r=5.4);
+    translate([0,0,H - 0.6 - btn_z]) cylinder(d=btn_d, h=1.1);
   }
 }
 
-module btn_place()
-  rotate([0,0,btn_a]) translate([btn_or - wall - 3.2, 0, btn_z]) rotate([0,90,0]) children();
+module btn_place() translate([btn_c[0], btn_c[1], btn_z]) children();
 
-module button_bore() rotate([0,0,btn_a]) translate([0,0,btn_z]) rotate([0,90,0]) {
-  translate([0,0,btn_or - wall - 1]) cylinder(d=btn_d + 0.3, h=wall + 3);
-  translate([0,0,btn_or - 1.6]) cylinder(d1=btn_d + 0.3, d2=btn_d + 5.5, h=2.6); // covers oblique face
+module button_bore() translate([btn_c[0], btn_c[1], 0]) {
+  translate([0,0,lid_in - 0.5]) cylinder(d=btn_d + 0.3, h=wall + 0.51);
+  translate([0,0,H - 0.6]) cylinder(d1=btn_d + 0.3, d2=btn_d + 3.3, h=0.61); // bezel
 }
 
 module housing_inner() difference() {
@@ -150,9 +153,8 @@ module housing_inner() difference() {
     { offset(-0.6) plan2d(); offset(-1.9) plan2d(); }
   for (p=pcb_holes) translate([p[0], p[1], floor_t]) cylinder(d=2.1, h=pcb_standoff+6);
   for (p=screw_pts) translate([p[0], p[1], 4]) cylinder(d=2.5, h=seam);
-  wall_slot(270, usb_z, 9.4, 3.8);
-  wall_slot(270, usb_z, 13, 7.2, 2.2); // plug body recess
-  button_bore();
+  wall_slot(9.04, 3.6, wall + 2);
+  wall_slot(13, 7.2, 2.2); // plug body recess
 }
 
 pin_y = 6;
@@ -216,6 +218,7 @@ module housing_lid(arc=true) difference() {
     latch_bores();
     servo_void();
     motor_void();
+    button_bore();
   }
 }
 

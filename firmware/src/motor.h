@@ -9,6 +9,7 @@ void motorClearFaults();
 void servoSet(uint32_t us);
 void boostOn();
 void boostOff();
+bool vbusPresent();
 void ledSet(uint8_t duty);
 int batteryMv();
 uint8_t batteryPct();

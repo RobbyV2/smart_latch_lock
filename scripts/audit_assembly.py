@@ -26,7 +26,7 @@ def bom_index(data):
     for row in data:
         names = tuple(item for item in row["Designator"].split(",") if item)
         key = (row["Manufacturer"], row["MPN"], row["Value"], row["Footprint"],
-               row["Distributor Part Number"])
+               row["LCSC Part #"])
         if key in index:
             raise ValueError(f"BOM line {key!r} appears more than once")
         index[key] = (int(row["Quantity"]), names)

@@ -1,7 +1,7 @@
-Designator,Quantity,Manufacturer,MPN,Value,Footprint,Distributor Part Number
-"C1,C7,C8",3,Samsung Electro-Mechanics,CL10A105KA8NNNC,1uF,triangle_flywheel_balancer:C_0603_1608Metric,C5673
+Designator,Quantity,Manufacturer,MPN,Value,Footprint,LCSC Part #
+"C1,C7,C8",3,Samsung Electro-Mechanics,CL10A105KB8NNNC,1uF,triangle_flywheel_balancer:C_0603_1608Metric,C15849
 "C10,C11",2,Samsung Electro-Mechanics,CL21A226MAQNNNE,22uF,triangle_flywheel_balancer:C_0805_2012Metric,C45783
-"C12,C14,C17,C18,C19,C20,C21,C3,C6",9,Samsung Electro-Mechanics,CL05B104KO5NNNC,100nF,triangle_flywheel_balancer:C_0402_1005Metric,C1525
+"C12,C14,C17,C18,C19,C20,C21,C22,C3,C6",10,Samsung Electro-Mechanics,CL05B104KO5NNNC,100nF,triangle_flywheel_balancer:C_0402_1005Metric,C1525
 C13,1,Samsung Electro-Mechanics,CL32A107MPVNNNE,100uF,triangle_flywheel_balancer:C_1210_3225Metric,C23742
 C15,1,Samsung Electro-Mechanics,CL05B223KB5NNNC,22nF,triangle_flywheel_balancer:C_0402_1005Metric,C337699
 C16,1,FH,0402B102K500NT,1nF,triangle_flywheel_balancer:C_0402_1005Metric,C1523
@@ -22,16 +22,17 @@ R1,1,YAGEO,RC0402FR-0710KL,10k,triangle_flywheel_balancer:R_0402_1005Metric,C604
 "R10,R14,R17,R18,R19,R4,R7",7,UNI-ROYAL,0402WGF1001TCE,1k,triangle_flywheel_balancer:R_0402_1005Metric,C11702
 R11,1,UNI-ROYAL,0402WGF3302TCE,33k,triangle_flywheel_balancer:R_0402_1005Metric,C25779
 R12,1,UNI-ROYAL,0402WGF5102TCE,51k,triangle_flywheel_balancer:R_0402_1005Metric,C25794
-"R13,R15,R16",3,UNI-ROYAL,0402WGF1003TCE,100k,triangle_flywheel_balancer:R_0402_1005Metric,C25741
+"R13,R15,R16,R21",4,UNI-ROYAL,0402WGF1003TCE,100k,triangle_flywheel_balancer:R_0402_1005Metric,C25741
 "R2,R3",2,UNI-ROYAL,0402WGF5101TCE,5.1k,triangle_flywheel_balancer:R_0402_1005Metric,C25905
+R20,1,PANASONIC,ERJ2RKF6802X,68k,triangle_flywheel_balancer:R_0402_1005Metric,C77607
 R5,1,YAGEO,RC0402FR-072KL,2k,triangle_flywheel_balancer:R_0402_1005Metric,C60488
 R6,1,UNI-ROYAL,0402WGF3300TCE,330,triangle_flywheel_balancer:R_0402_1005Metric,C25104
-R8,1,YAGEO,RC0402FR-071M1L,1.1M,triangle_flywheel_balancer:R_0402_1005Metric,
-R9,1,YAGEO,RC0402FR-07150KL,150k,triangle_flywheel_balancer:R_0402_1005Metric,C93947
+R8,1,UNI-ROYAL,0402WGF1103TCE,110k,triangle_flywheel_balancer:R_0402_1005Metric,C25745
+R9,1,UNI-ROYAL,0402WGF1502TCE,15k,triangle_flywheel_balancer:R_0402_1005Metric,C25756
 S4,1,XKB,TS-1187A-B-A-B,SW_Push,triangle_flywheel_balancer:SW_Push_1TS009xxxx-xxxx-xxxx_6x6x5mm,C318884
 U1,1,Espressif,ESP32-C3-MINI-1-N4,ESP32-C3-MINI-1-N4,triangle_flywheel_balancer:ESP32-C3-MINI-1,C2838502
 U2,1,Texas Instruments,DRV8876PWPR,DRV8876PWPR,triangle_flywheel_balancer:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3x3mm_ThermalVias,C575551
-U3,1,Texas Instruments,TLV7041DCKR,TLV7041DCKR,triangle_flywheel_balancer:SOT-353_SC-70-5,
+U3,1,Texas Instruments,TLV1701AIDBVR,TLV1701AIDBVR,triangle_flywheel_balancer:SOT-23-5,C130035
 U4,1,Microchip,MCP73831T-2ACI/OT,MCP73831T-2ACI/OT,triangle_flywheel_balancer:SOT-23-5,C424093
 U5,1,PUOLOP,DW01A,DW01A,triangle_flywheel_balancer:SOT-23-6,C351410
 U6,1,Torex,XC6220B331MR-G,XC6220B331MR-G,triangle_flywheel_balancer:SOT-23-5,C86534

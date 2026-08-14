@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "10.0.5"
     },
-    "CreationDate": "2026-08-13T09:39:42-05:00"
+    "CreationDate": "2026-08-13T21:07:55-05:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -14,11 +14,11 @@
       "Revision": "rev?"
     },
     "Size": {
-      "X": 55.1,
-      "Y": 40.1
+      "X": 45.1,
+      "Y": 34.1
     },
     "LayerNumber": 4,
-    "BoardThickness": 1.6,
+    "BoardThickness": 1.5862,
     "Finish": "ENIG",
     "ImpedanceControlled": true
   },
@@ -28,17 +28,18 @@
       "PadToPad": 0.2,
       "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
-      "MinLineWidth": 0.25,
-      "TrackToRegion": 0.25,
-      "RegionToRegion": 0.25
+      "MinLineWidth": 0.2,
+      "TrackToRegion": 0.3,
+      "RegionToRegion": 0.3
     },
     {
       "Layers": "Inner",
       "PadToPad": 0.2,
       "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
-      "TrackToRegion": 0.25,
-      "RegionToRegion": 0.25
+      "MinLineWidth": 0.25,
+      "TrackToRegion": 0.3,
+      "RegionToRegion": 0.3
     }
   ],
   "FilesAttributes": [
@@ -117,8 +118,8 @@
     },
     {
       "Type": "Dielectric",
-      "Material": "FR4",
-      "DielectricConstant": "4.5",
+      "Material": "7628",
+      "DielectricConstant": "4.6",
       "LossTangent": "0.02",
       "Name": "F.Cu/In1.Cu",
       "Notes": "Type: dielectric layer 1 (from F.Cu to In1.Cu)"
@@ -141,8 +142,8 @@
     },
     {
       "Type": "Dielectric",
-      "Material": "FR4",
-      "DielectricConstant": "4.5",
+      "Material": "7628",
+      "DielectricConstant": "4.6",
       "LossTangent": "0.02",
       "Name": "In2.Cu/B.Cu",
       "Notes": "Type: dielectric layer 3 (from In2.Cu to B.Cu)"

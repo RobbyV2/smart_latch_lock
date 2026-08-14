@@ -1,6 +1,6 @@
 {
-  "board_sha256": "a65bdb4e23f2a3af44e4f1881cb911829819458fad38838c6bdd0de664c56d16",
-  "component_count": 60,
+  "board_sha256": "57c50b39fcb73d2dcde51b914df14ff59cf120190562c9a272a5cb6cec15397e",
+  "component_count": 63,
   "expected_footprint_count": 0,
   "expected_net_count": 0,
   "expected_value_count": 0,

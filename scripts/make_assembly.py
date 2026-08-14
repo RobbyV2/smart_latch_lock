@@ -11,7 +11,7 @@ from collections import defaultdict
 DISTRIBUTOR_OVERRIDE = {}
 
 BOM_HEADERS = ("Designator", "Quantity", "Manufacturer", "MPN", "Value", "Footprint",
-               "Distributor Part Number")
+               "LCSC Part #")
 CENTROID_HEADERS = ("Designator", "Mid X (mm)", "Mid Y (mm)", "Layer", "Rotation (deg CCW)",
                     "Value", "Package")
 RANGE = re.compile(r"^([A-Za-z_]+)(\d+)-([A-Za-z_]*)(\d+)$")

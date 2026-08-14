@@ -95,7 +95,11 @@ static void handle(Event ev) {
   switch (st) {
     case State::UnlockedOpen:
       if (ev == Event::CmdLock || ev == Event::BtnShort) {
-        faults &= ~F_LOWBAT;
+        faults &= ~(F_LOWBAT | F_CHARGING);
+        if (vbusPresent()) {
+          faults |= F_CHARGING;
+          break;
+        }
         if (batteryMv() < VBAT_MIN_LOCK_MV) {
           faults |= F_LOWBAT;
           break;

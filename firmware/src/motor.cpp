@@ -21,6 +21,7 @@ static esp_timer_handle_t maskTimer, sampleTimer;
 static volatile uint8_t faults;
 static int win[8], wi, wsum, softCnt;
 static bool boost;
+static int64_t boostOffAt;
 static volatile bool running;
 static portMUX_TYPE mux = portMUX_INITIALIZER_UNLOCKED;
 
@@ -83,8 +84,11 @@ static void ledcCh(ledc_channel_t ch, ledc_timer_t t, int pin, bool invert) {
 
 void motorInit() {
   gpio_config_t out = {};
-  out.pin_bit_mask = BIT64(PIN_MOTOR_PH) | BIT64(PIN_DRV_NSLEEP) | BIT64(PIN_BOOST_EN);
+  out.pin_bit_mask = BIT64(PIN_MOTOR_PH) | BIT64(PIN_BOOST_EN);
   out.mode = GPIO_MODE_OUTPUT;
+  gpio_config(&out);
+  out.pin_bit_mask = BIT64(PIN_VBUS_DET);
+  out.mode = GPIO_MODE_INPUT;
   gpio_config(&out);
 
   ledc_timer_config_t t = {};
@@ -178,8 +182,9 @@ void servoSet(uint32_t us) {
 
 void boostOn() {
   if (boost) return;
+  int64_t off = esp_timer_get_time() / 1000 - boostOffAt;
+  if (off < BOOST_OFF_MS) vTaskDelay(pdMS_TO_TICKS(BOOST_OFF_MS - off));
   gpio_set_level((gpio_num_t)PIN_BOOST_EN, 1);
-  gpio_set_level((gpio_num_t)PIN_DRV_NSLEEP, 1);
   vTaskDelay(pdMS_TO_TICKS(20));
   boost = true;
 }
@@ -187,10 +192,12 @@ void boostOn() {
 void boostOff() {
   ledc_set_duty(LEDC_LOW_SPEED_MODE, CH_SERVO, 0);
   ledc_update_duty(LEDC_LOW_SPEED_MODE, CH_SERVO);
-  gpio_set_level((gpio_num_t)PIN_DRV_NSLEEP, 0);
   gpio_set_level((gpio_num_t)PIN_BOOST_EN, 0);
   boost = false;
+  boostOffAt = esp_timer_get_time() / 1000;
 }
+
+bool vbusPresent() { return gpio_get_level((gpio_num_t)PIN_VBUS_DET); }
 
 void ledSet(uint8_t duty) {
   ledc_set_duty(LEDC_LOW_SPEED_MODE, CH_LED, duty);

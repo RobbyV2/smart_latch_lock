@@ -1,8 +1,8 @@
 order,layer,type,thickness_mm,material
 1,F.Cu,copper,0.035,
-2,dielectric 1,prepreg,0.2,FR4
-3,In1.Cu,copper,0.0175,
-4,dielectric 2,core,1.095,FR4
-5,In2.Cu,copper,0.0175,
-6,dielectric 3,prepreg,0.2,FR4
+2,dielectric 1,prepreg,0.2104,7628
+3,In1.Cu,copper,0.0152,
+4,dielectric 2,core,1.065,FR4
+5,In2.Cu,copper,0.0152,
+6,dielectric 3,prepreg,0.2104,7628
 7,B.Cu,copper,0.035,

@@ -1,11 +1,11 @@
 {
-  "board_sha256": "a65bdb4e23f2a3af44e4f1881cb911829819458fad38838c6bdd0de664c56d16",
-  "checked_at": "2026-08-13T14:39:43.404700+00:00",
+  "board_sha256": "57c50b39fcb73d2dcde51b914df14ff59cf120190562c9a272a5cb6cec15397e",
+  "checked_at": "2026-08-14T02:07:57.397242+00:00",
   "issues": [],
   "parts": [
     {
-      "available": 396060,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 394020,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "BOOMELE",
       "mpn": "2.54-1*3P",
       "passed": true,
@@ -16,8 +16,8 @@
       "url": "https://www.lcsc.com/product-detail/C49257.html"
     },
     {
-      "available": 195340,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 194440,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "Ckmtw",
       "mpn": "B-2100S02P-A110",
       "passed": true,
@@ -28,8 +28,8 @@
       "url": "https://www.lcsc.com/product-detail/C124375.html"
     },
     {
-      "available": 11352,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 11295,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "Espressif",
       "mpn": "ESP32-C3-MINI-1-N4",
       "passed": true,
@@ -40,8 +40,8 @@
       "url": "https://www.lcsc.com/product-detail/C2838502.html"
     },
     {
-      "available": 1270500,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 2514900,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "FH",
       "mpn": "0402B102K500NT",
       "passed": true,
@@ -52,8 +52,8 @@
       "url": "https://www.lcsc.com/product-detail/C1523.html"
     },
     {
-      "available": 14050,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 14070,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "HXY MOSFET",
       "mpn": "8205A",
       "passed": true,
@@ -64,8 +64,8 @@
       "url": "https://www.lcsc.com/product-detail/C5148694.html"
     },
     {
-      "available": 4172200,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 4119200,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "Hubei KENTO",
       "mpn": "KT-0603R",
       "passed": true,
@@ -76,8 +76,8 @@
       "url": "https://www.lcsc.com/product-detail/C2286.html"
     },
     {
-      "available": 399020,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 398120,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "JST",
       "mpn": "B2B-PH-K-S(LF)(SN)",
       "passed": true,
@@ -88,8 +88,8 @@
       "url": "https://www.lcsc.com/product-detail/C131337.html"
     },
     {
-      "available": 427710,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 424760,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "Korean Hroparts",
       "mpn": "TYPE-C-31-M-12",
       "passed": true,
@@ -100,8 +100,8 @@
       "url": "https://www.lcsc.com/product-detail/C165948.html"
     },
     {
-      "available": 4258,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 4140,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "Microchip",
       "mpn": "MCP73831T-2ACI/OT",
       "passed": true,
@@ -112,8 +112,8 @@
       "url": "https://www.lcsc.com/product-detail/C424093.html"
     },
     {
-      "available": 31385,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 31360,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "Murata",
       "mpn": "DFE201610E-1R0M=P2",
       "passed": true,
@@ -124,8 +124,20 @@
       "url": "https://www.lcsc.com/product-detail/C161082.html"
     },
     {
-      "available": 132020,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 5500,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
+      "manufacturer": "PANASONIC",
+      "mpn": "ERJ2RKF6802X",
+      "passed": true,
+      "quantity": 1,
+      "required_with_10_percent_overage": 2,
+      "route": "C77607",
+      "source": "LCSC",
+      "url": "https://www.lcsc.com/product-detail/C77607.html"
+    },
+    {
+      "available": 131940,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "PUOLOP",
       "mpn": "DW01A",
       "passed": true,
@@ -136,8 +148,8 @@
       "url": "https://www.lcsc.com/product-detail/C351410.html"
     },
     {
-      "available": 28365,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 26820,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "STMicroelectronics",
       "mpn": "USBLC6-2SC6",
       "passed": true,
@@ -148,20 +160,20 @@
       "url": "https://www.lcsc.com/product-detail/C7519.html"
     },
     {
-      "available": 10000,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 8549000,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "Samsung Electro-Mechanics",
       "mpn": "CL05B104KO5NNNC",
       "passed": true,
-      "quantity": 9,
-      "required_with_10_percent_overage": 10,
+      "quantity": 10,
+      "required_with_10_percent_overage": 11,
       "route": "C1525",
       "source": "LCSC",
       "url": "https://www.lcsc.com/product-detail/C1525.html"
     },
     {
-      "available": 1064100,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 1073500,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "Samsung Electro-Mechanics",
       "mpn": "CL05B223KB5NNNC",
       "passed": true,
@@ -172,20 +184,20 @@
       "url": "https://www.lcsc.com/product-detail/C337699.html"
     },
     {
-      "available": 4619700,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 3009900,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "Samsung Electro-Mechanics",
-      "mpn": "CL10A105KA8NNNC",
+      "mpn": "CL10A105KB8NNNC",
       "passed": true,
       "quantity": 3,
       "required_with_10_percent_overage": 4,
-      "route": "C5673",
+      "route": "C15849",
       "source": "LCSC",
-      "url": "https://www.lcsc.com/product-detail/C5673.html"
+      "url": "https://www.lcsc.com/product-detail/C15849.html"
     },
     {
-      "available": 1839300,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 3178850,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "Samsung Electro-Mechanics",
       "mpn": "CL10A475KO8NNNC",
       "passed": true,
@@ -196,8 +208,8 @@
       "url": "https://www.lcsc.com/product-detail/C19666.html"
     },
     {
-      "available": 148460,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 3407140,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "Samsung Electro-Mechanics",
       "mpn": "CL21A106KAYNNNE",
       "passed": true,
@@ -208,8 +220,8 @@
       "url": "https://www.lcsc.com/product-detail/C15850.html"
     },
     {
-      "available": 705120,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 1460,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "Samsung Electro-Mechanics",
       "mpn": "CL21A226MAQNNNE",
       "passed": true,
@@ -220,8 +232,8 @@
       "url": "https://www.lcsc.com/product-detail/C45783.html"
     },
     {
-      "available": 18031,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 30242,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "Samsung Electro-Mechanics",
       "mpn": "CL32A107MPVNNNE",
       "passed": true,
@@ -232,8 +244,8 @@
       "url": "https://www.lcsc.com/product-detail/C23742.html"
     },
     {
-      "available": 1823,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 1668,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "Texas Instruments",
       "mpn": "DRV8876PWPR",
       "passed": true,
@@ -244,8 +256,20 @@
       "url": "https://www.lcsc.com/product-detail/C575551.html"
     },
     {
-      "available": 8900,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 851,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
+      "manufacturer": "Texas Instruments",
+      "mpn": "TLV1701AIDBVR",
+      "passed": true,
+      "quantity": 1,
+      "required_with_10_percent_overage": 2,
+      "route": "C130035",
+      "source": "LCSC",
+      "url": "https://www.lcsc.com/product-detail/C130035.html"
+    },
+    {
+      "available": 8580,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "Texas Instruments",
       "mpn": "TPS61023DRLR",
       "passed": true,
@@ -256,8 +280,8 @@
       "url": "https://www.lcsc.com/product-detail/C919459.html"
     },
     {
-      "available": 28494,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 28474,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "Torex",
       "mpn": "XC6220B331MR-G",
       "passed": true,
@@ -268,8 +292,8 @@
       "url": "https://www.lcsc.com/product-detail/C86534.html"
     },
     {
-      "available": 429900,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 6030000,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "UNI-ROYAL",
       "mpn": "0402WGF1001TCE",
       "passed": true,
@@ -280,20 +304,44 @@
       "url": "https://www.lcsc.com/product-detail/C11702.html"
     },
     {
-      "available": 176500,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 7592300,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "UNI-ROYAL",
       "mpn": "0402WGF1003TCE",
       "passed": true,
-      "quantity": 3,
-      "required_with_10_percent_overage": 4,
+      "quantity": 4,
+      "required_with_10_percent_overage": 5,
       "route": "C25741",
       "source": "LCSC",
       "url": "https://www.lcsc.com/product-detail/C25741.html"
     },
     {
-      "available": 679300,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 53600,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
+      "manufacturer": "UNI-ROYAL",
+      "mpn": "0402WGF1103TCE",
+      "passed": true,
+      "quantity": 1,
+      "required_with_10_percent_overage": 2,
+      "route": "C25745",
+      "source": "LCSC",
+      "url": "https://www.lcsc.com/product-detail/C25745.html"
+    },
+    {
+      "available": 377900,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
+      "manufacturer": "UNI-ROYAL",
+      "mpn": "0402WGF1502TCE",
+      "passed": true,
+      "quantity": 1,
+      "required_with_10_percent_overage": 2,
+      "route": "C25756",
+      "source": "LCSC",
+      "url": "https://www.lcsc.com/product-detail/C25756.html"
+    },
+    {
+      "available": 1206400,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "UNI-ROYAL",
       "mpn": "0402WGF3300TCE",
       "passed": true,
@@ -304,8 +352,8 @@
       "url": "https://www.lcsc.com/product-detail/C25104.html"
     },
     {
-      "available": 258500,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 685200,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "UNI-ROYAL",
       "mpn": "0402WGF3302TCE",
       "passed": true,
@@ -316,8 +364,8 @@
       "url": "https://www.lcsc.com/product-detail/C25779.html"
     },
     {
-      "available": 2499500,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 7024200,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "UNI-ROYAL",
       "mpn": "0402WGF5101TCE",
       "passed": true,
@@ -328,8 +376,8 @@
       "url": "https://www.lcsc.com/product-detail/C25905.html"
     },
     {
-      "available": 1788900,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 2107000,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "UNI-ROYAL",
       "mpn": "0402WGF5102TCE",
       "passed": true,
@@ -340,8 +388,8 @@
       "url": "https://www.lcsc.com/product-detail/C25794.html"
     },
     {
-      "available": 959620,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 958040,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "XKB",
       "mpn": "TS-1187A-B-A-B",
       "passed": true,
@@ -352,8 +400,8 @@
       "url": "https://www.lcsc.com/product-detail/C318884.html"
     },
     {
-      "available": 2545100,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 4771700,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "YAGEO",
       "mpn": "RC0402FR-0710KL",
       "passed": true,
@@ -364,20 +412,8 @@
       "url": "https://www.lcsc.com/product-detail/C60490.html"
     },
     {
-      "available": 688300,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
-      "manufacturer": "YAGEO",
-      "mpn": "RC0402FR-07150KL",
-      "passed": true,
-      "quantity": 1,
-      "required_with_10_percent_overage": 2,
-      "route": "C93947",
-      "source": "LCSC",
-      "url": "https://www.lcsc.com/product-detail/C93947.html"
-    },
-    {
-      "available": 73400,
-      "fetched_at": "2026-08-13T14:39:43.404700+00:00",
+      "available": 111200,
+      "fetched_at": "2026-08-14T02:07:57.397242+00:00",
       "manufacturer": "YAGEO",
       "mpn": "RC0402FR-072KL",
       "passed": true,
@@ -393,18 +429,5 @@
     "overage_percent": 10,
     "population": "A"
   },
-  "skipped": [
-    {
-      "manufacturer": "Texas Instruments",
-      "mpn": "TLV7041DCKR",
-      "quantity": 1,
-      "route": ""
-    },
-    {
-      "manufacturer": "YAGEO",
-      "mpn": "RC0402FR-071M1L",
-      "quantity": 1,
-      "route": ""
-    }
-  ]
+  "skipped": []
 }
